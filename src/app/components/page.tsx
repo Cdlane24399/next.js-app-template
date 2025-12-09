@@ -11,6 +11,7 @@ import {
 } from 'lucide-react';
 import React from 'react';
 
+import AnimatedBackground from '@/components/AnimatedBackground';
 import Button from '@/components/buttons/Button';
 import IconButton from '@/components/buttons/IconButton';
 import TextButton from '@/components/buttons/TextButton';
@@ -35,8 +36,13 @@ export default function ComponentPage() {
 
   return (
     <main>
+      <AnimatedBackground />
       <section
-        className={clsx(mode === 'dark' ? 'bg-dark' : 'bg-white', color)}
+        className={clsx(
+          mode === 'dark' ? 'bg-dark/95' : 'bg-white/95',
+          'backdrop-blur-sm',
+          color,
+        )}
       >
         <div
           className={clsx(
