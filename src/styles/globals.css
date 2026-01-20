@@ -142,6 +142,7 @@
 }
 
 @layer base {
+  @reference "tailwindcss";
   /* inter var - latin */
   @font-face {
     font-family: 'Inter';
@@ -209,6 +210,7 @@
 }
 
 @layer utilities {
+  @reference "tailwindcss";
   .animation-delay-2000 {
     animation-delay: 2s;
   }
